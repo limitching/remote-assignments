@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eeeeee;
+}
+header section.logo {
+  flex: 4 1 400px;
+  display: flex;
+}
+header section.logo p {
+  font-size: 1.5rem;
+  align-self: center;
+  text-align: center;
+}
+header section.logo img {
+  height: 10vh;
+}
+header nav {
+  flex: 2 1 200px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.2s ease;
+}
+header nav ul li a:hover {
+  color: blue;
+  border-bottom: 3px solid blue;
+}
+
+main section.welcome {
+  height: 20vh;
+  background-color: #cfdcec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.welcome h1 {
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+main section.boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.boxes h2 {
+  text-align: center;
+  padding: 2rem;
+}
+main section.boxes div.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+main section.boxes div.boxes .box {
+  border: 10px solid white;
+  padding: 4rem;
+  text-align: center;
+  flex: 1 0 500px;
+  max-width: 600px;
+  background-color: #8b98a8;
+  font-size: 1.25rem;
+  transition: all 0.2s ease;
+}
+main section.boxes div.boxes .box:hover {
+  background-color: rgb(123, 187, 28);
+}
+main section.boxes div.action {
+  display: flex;
+  background-color: #e0edfd;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+}
+main section.boxes div.action a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.2s ease;
+}
+main section.boxes div.action a:hover {
+  color: blue;
+  border-bottom: 3px solid blue;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer section.copyright p {
+  font-size: small;
+}
+footer section.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer section.link p {
+  font-size: medium;
+  margin: 1rem;
+}
+footer section.link a img {
+  width: 3vw;
+}/*# sourceMappingURL=style.css.map */
