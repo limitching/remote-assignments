@@ -15,6 +15,8 @@ h6 {
 
 body {
   header {
+    position: sticky;
+    top: 0;
     height: 48px;
     gap: 10px;
     display: flex;
@@ -51,6 +53,8 @@ body {
 
           li {
             list-style-type: none;
+            display: flex;
+
             a {
               color: #5f6368;
               text-decoration: none;
@@ -59,6 +63,10 @@ body {
               &:hover {
                 color: #202124;
               }
+            }
+            svg.icon-arrow {
+              width: 24px;
+              height: 24px;
             }
           }
         }
