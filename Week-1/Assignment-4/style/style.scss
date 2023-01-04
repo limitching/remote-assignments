@@ -21,6 +21,7 @@ h6 {
 body {
   header {
     position: sticky;
+    z-index: 10;
     top: 0;
     height: 48px;
     gap: 10px;
@@ -249,6 +250,114 @@ body {
         margin: 3rem 0;
         img {
           width: 500px;
+        }
+      }
+    }
+  }
+
+  section.developer-products {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div.landing-row-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 24px;
+      width: 1800px;
+      div.landing-column-inner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        header {
+          margin: 4rem;
+          div.header-text {
+            h2 {
+              font-size: 44px;
+            }
+          }
+        }
+        div.products-group {
+          display: inline-flex;
+          gap: 2rem;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          div.product-group {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 342px;
+            height: 96px;
+            justify-items: center;
+            align-items: center;
+            div.row-item {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+              height: 96px;
+              div.row-item-media {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                figure {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  div.icon {
+                    a {
+                      div.logo {
+                        img {
+                          width: 64px;
+                          height: auto;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              div.row-item-description {
+                width: 342px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+                justify-self: flex-end;
+                div.row-item-description-content {
+                  align-self: center;
+                  justify-self: flex-end;
+                }
+              }
+            }
+          }
+        }
+        div.button {
+          margin: 6rem 0;
+          border-radius: 4px;
+          background-color: #1a73eb;
+          width: 230px;
+          height: 36px;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: center;
+          &:hover {
+            background-color: #1765cc;
+          }
+          p {
+            color: white;
+            font-weight: bold;
+            font-size: small;
+          }
         }
       }
     }

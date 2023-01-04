@@ -17,6 +17,7 @@ h6 {
 body header {
   position: -webkit-sticky;
   position: sticky;
+  z-index: 10;
   top: 0;
   height: 48px;
   gap: 10px;
@@ -243,4 +244,103 @@ body section.tec-impact div.contents-container div.img-container {
 }
 body section.tec-impact div.contents-container div.img-container img {
   width: 500px;
+}
+body section.developer-products {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body section.developer-products div.landing-row-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  width: 1800px;
+}
+body section.developer-products div.landing-row-inner div.landing-column-inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body section.developer-products div.landing-row-inner div.landing-column-inner header {
+  margin: 4rem;
+}
+body section.developer-products div.landing-row-inner div.landing-column-inner header div.header-text h2 {
+  font-size: 44px;
+}
+body section.developer-products div.landing-row-inner div.landing-column-inner div.products-group {
+  display: inline-flex;
+  gap: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body section.developer-products div.landing-row-inner div.landing-column-inner div.products-group div.product-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 342px;
+  height: 96px;
+  justify-items: center;
+  align-items: center;
+}
+body section.developer-products div.landing-row-inner div.landing-column-inner div.products-group div.product-group div.row-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 96px;
+}
+body section.developer-products div.landing-row-inner div.landing-column-inner div.products-group div.product-group div.row-item div.row-item-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body section.developer-products div.landing-row-inner div.landing-column-inner div.products-group div.product-group div.row-item div.row-item-media figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body section.developer-products div.landing-row-inner div.landing-column-inner div.products-group div.product-group div.row-item div.row-item-media figure div.icon a div.logo img {
+  width: 64px;
+  height: auto;
+}
+body section.developer-products div.landing-row-inner div.landing-column-inner div.products-group div.product-group div.row-item div.row-item-description {
+  width: 342px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  justify-self: flex-end;
+}
+body section.developer-products div.landing-row-inner div.landing-column-inner div.products-group div.product-group div.row-item div.row-item-description div.row-item-description-content {
+  align-self: center;
+  justify-self: flex-end;
+}
+body section.developer-products div.landing-row-inner div.landing-column-inner div.button {
+  margin: 6rem 0;
+  border-radius: 4px;
+  background-color: #1a73eb;
+  width: 230px;
+  height: 36px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body section.developer-products div.landing-row-inner div.landing-column-inner div.button:hover {
+  background-color: #1765cc;
+}
+body section.developer-products div.landing-row-inner div.landing-column-inner div.button p {
+  color: white;
+  font-weight: bold;
+  font-size: small;
 }/*# sourceMappingURL=style.css.map */
