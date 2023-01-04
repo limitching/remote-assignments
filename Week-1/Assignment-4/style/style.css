@@ -339,8 +339,176 @@ body section.developer-products div.landing-row-inner div.landing-column-inner d
 body section.developer-products div.landing-row-inner div.landing-column-inner div.button:hover {
   background-color: #1765cc;
 }
-body section.developer-products div.landing-row-inner div.landing-column-inner div.button p {
+body section.developer-products div.landing-row-inner div.landing-column-inner div.button a {
   color: white;
+  text-decoration: none;
   font-weight: bold;
   font-size: small;
+}
+body section.work-smarter {
+  background-color: #1a73eb;
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+body section.work-smarter div.landing-row-inner div.landing-row-group div.item-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body section.work-smarter div.landing-row-inner div.landing-row-group div.item-body h3.content {
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: white;
+}
+body section.work-smarter div.landing-row-inner div.landing-row-group div.item-body div.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 240px;
+  height: 36px;
+  border-radius: 5px;
+}
+body section.work-smarter div.landing-row-inner div.landing-row-group div.item-body div.button a {
+  color: #4073e8;
+  text-decoration: none;
+  font-size: small;
+  font-weight: bold;
+}
+body section.work-smarter div.landing-row-inner div.landing-row-group div.item-body div.button:hover {
+  background-color: #e8f0fe;
+}
+body section.work-smarter div.landing-row-inner div.landing-row-group div.item-body div.button:hover a {
+  color: #3573e8;
+}
+body section.events-community {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section.events-community div.landing-row-inner div.landing-row-group {
+  display: inline-flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 1800px;
+  padding: 24px;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.events {
+  border: 1px solid #dadce0;
+  padding-bottom: 20px;
+  display: flex;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 700px;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.events div.item-media {
+  overflow: hidden;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.events div.item-media figure a img {
+  width: 700px;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.events div.item-description {
+  display: flex;
+  justify-content: center;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.events div.item-description div.landing-row-item-body {
+  width: 670px;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.events div.item-description div.landing-row-item-body h3 {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  color: #1a73e8;
+  margin-bottom: 1.5rem;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.events div.item-description div.landing-row-item-body div.description-content {
+  margin-left: 10px;
+  color: black;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.events div.item-description div.landing-row-item-body div.button {
+  border-radius: 5px;
+  height: 36px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.events div.item-description div.landing-row-item-body div.button a {
+  text-align: center;
+  align-self: center;
+  color: #4073e8;
+  font-size: small;
+  text-decoration: none;
+  border: 1px solid #dadce0;
+  width: 120px;
+  height: 36px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  margin: 4px 4px 4px 12px;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.events div.item-description div.landing-row-item-body div.button a:hover {
+  background-color: #e8f0fe;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.community {
+  border: 1px solid #dadce0;
+  padding-bottom: 20px;
+  display: flex;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 700px;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.community div.item-media {
+  overflow: hidden;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.community div.item-media figure a img {
+  width: 700px;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.community div.item-description {
+  display: flex;
+  justify-content: center;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.community div.item-description div.landing-row-item-body {
+  width: 670px;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.community div.item-description div.landing-row-item-body h3 {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  color: #1a73e8;
+  margin-bottom: 1.5rem;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.community div.item-description div.landing-row-item-body div.description-content {
+  margin-left: 10px;
+  color: black;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.community div.item-description div.landing-row-item-body div.button {
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  height: 36px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.community div.item-description div.landing-row-item-body div.button a {
+  text-align: center;
+  align-self: center;
+  color: #4073e8;
+  font-size: small;
+  text-decoration: none;
+  border: 1px solid #dadce0;
+  width: 155px;
+  height: 36px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  margin: 4px 4px 4px 12px;
+}
+body section.events-community div.landing-row-inner div.landing-row-group div.community div.item-description div.landing-row-item-body div.button a:hover {
+  background-color: #e8f0fe;
 }/*# sourceMappingURL=style.css.map */
