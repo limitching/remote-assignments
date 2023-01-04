@@ -1,7 +1,12 @@
+$themeColor: #5f6368;
+$searchbox-hover: #e8eaed;
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Google Sans, Noto Sans, Noto Sans JP, Noto Sans KR,
+    Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali,
+    sans-serif;
 }
 
 h1,
@@ -54,17 +59,22 @@ body {
           li {
             list-style-type: none;
             display: flex;
-
             a {
-              color: #5f6368;
+              font-weight: bold;
+              flex-wrap: nowrap;
+              align-self: center;
+              color: $themeColor;
               text-decoration: none;
               transition: all 0.1s ease;
               padding: 0 1rem 0 1rem;
+              flex-grow: 0;
               &:hover {
                 color: #202124;
               }
             }
             svg.icon-arrow {
+              align-self: center;
+              fill: $themeColor;
               width: 24px;
               height: 24px;
             }
@@ -76,26 +86,28 @@ body {
         display: flex;
         flex-wrap: nowrap;
         max-width: 200px;
+        border-radius: 4px;
+        transition: background 0.2s, color 0.2s;
         &:hover {
-          background-color: #eae8ed;
+          background-color: $searchbox-hover;
         }
         button {
           width: 36px;
           height: 36px;
           border: none;
-          background-color: #f1f3f4;
-          &:hover {
-            background-color: #eae8ed;
+          border-radius: 4px;
+          background-color: transparent;
+
+          .fa-search {
+            color: $themeColor;
           }
         }
         input {
           height: 36px;
           width: 200px;
           border: none;
-          background-color: #f1f3f4;
-          &:hover {
-            background-color: #eae8ed;
-          }
+          border-radius: 4px;
+          background-color: transparent;
         }
       }
     }
@@ -103,28 +115,35 @@ body {
     div.language-selector {
       width: 139.717px;
       height: 36px;
+      box-shadow: none;
       button.language-menu {
         width: 139.717px;
         height: 36px;
         display: flex;
+        flex-wrap: nowrap;
         justify-content: center;
+        align-items: center;
         background-color: #ffffff;
-        border-radius: 5%;
+        border: 1px solid $searchbox-hover;
+        border-radius: 4px;
         &:hover {
           background-color: #f1f3f4;
-          border-radius: 5%;
         }
         svg.icon-language {
+          fill: $themeColor;
           width: 24px;
+          height: 24px;
         }
         span {
           align-self: center;
           text-align: center;
-          padding: 0.5rem;
+          padding: 0.6rem;
           width: 63.72px;
           height: 36px;
+          color: $themeColor;
         }
         svg.icon-arrow {
+          fill: $themeColor;
           width: 24px;
           height: 24px;
         }
@@ -137,17 +156,100 @@ body {
       flex: 0 0 auto;
       flex-wrap: nowrap;
       gap: 8px;
+      margin-right: 15px;
       div.circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 30px;
         height: 30px;
-        border: 1px solid grey;
+        border: 1px solid #dadcd0;
         border-radius: 50%;
+        &:hover {
+          background-color: #f1f3f4;
+        }
       }
       div.profile-circle {
         width: 40px;
         height: 40px;
         border: 2px solid blue;
         border-radius: 50%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        div.circle-container {
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: center;
+          width: 95%;
+          height: 95%;
+          border-radius: 50%;
+          border: 1.5px solid white;
+          overflow: hidden;
+          img {
+            width: 100%;
+            z-index: 0;
+          }
+        }
+      }
+    }
+  }
+
+  section.tec-impact {
+    display: flex;
+    flex-wrap: no-wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e8e3e;
+    div.contents-container {
+      display: flex;
+      flex-wrap: nowrap;
+      max-width: 1488px;
+      div.contents {
+        flex: 1.5 0 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        h1 {
+          color: white;
+          font-size: 32px;
+        }
+        p {
+          color: white;
+          line-height: 1.75rem;
+        }
+        div.button {
+          background-color: #1e8e3e;
+          border-radius: 4px;
+          border: 1px solid white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: 125px;
+          height: 36px;
+          &:hover {
+            background-color: #1a7935;
+          }
+          p {
+            color: white;
+          }
+        }
+      }
+      div.img-container {
+        flex: 1 0 20%;
+        border-radius: 0.6rem;
+        max-width: 500px;
+        overflow: hidden;
+        margin: 3rem 0;
+        img {
+          width: 500px;
+        }
       }
     }
   }
