@@ -511,4 +511,83 @@ body section.events-community div.landing-row-inner div.landing-row-group div.co
 }
 body section.events-community div.landing-row-inner div.landing-row-group div.community div.item-description div.landing-row-item-body div.button a:hover {
   background-color: #e8f0fe;
+}
+body section.news {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #f1f3f4;
+  padding-bottom: 3rem;
+}
+body section.news div.landing-row-inner {
+  width: 1600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section.news div.landing-row-inner div.landing-row-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body section.news div.landing-row-inner div.landing-row-group header {
+  background-color: transparent;
+  margin: 2.5rem 0;
+}
+body section.news div.landing-row-inner div.landing-row-group header h3 {
+  font-size: 2.5rem;
+}
+body section.news div.landing-row-inner div.landing-row-group div.flex-group {
+  display: inline-flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body section.news div.landing-row-inner div.landing-row-group div.flex-group div.block-group {
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #dadce0;
+  flex: 1 1 340px;
+  min-width: 170px;
+}
+body section.news div.landing-row-inner div.landing-row-group div.flex-group div.block-group div.row-block div.block-image {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section.news div.landing-row-inner div.landing-row-group div.flex-group div.block-group div.row-block div.block-image div.icon a div.icon-container img {
+  width: 96px;
+}
+body section.news div.landing-row-inner div.landing-row-group div.flex-group div.block-group div.row-block div.block-image div.icon a div.icon-container .flutter {
+  height: 96px;
+}
+body section.news div.landing-row-inner div.landing-row-group div.flex-group div.block-group div.row-block div.block-description {
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section.news div.landing-row-inner div.landing-row-group div.flex-group div.block-group div.row-block div.block-description div.landing-row-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
+  height: 200px;
+  flex: 1 0 0%;
+}
+body section.news div.landing-row-inner div.landing-row-group div.flex-group div.block-group div.row-block div.block-description div.landing-row-body h3 {
+  font-size: 1.5rem;
+  color: #1a73e8;
+}
+body section.news div.landing-row-inner div.landing-row-group div.flex-group div.block-group div.row-block div.block-description div.landing-row-body div.block-description-content {
+  font-size: 1rem;
+  color: black;
+}
+body section.news div.landing-row-inner div.landing-row-group div.flex-group div.block-group div.row-block div.block-description div.landing-row-body div.button a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

@@ -550,4 +550,95 @@ body {
       }
     }
   }
+  section.news {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #f1f3f4;
+    padding-bottom: 3rem;
+    div.landing-row-inner {
+      width: 1600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div.landing-row-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        header {
+          background-color: transparent;
+          margin: 2.5rem 0;
+          h3 {
+            font-size: 2.5rem;
+          }
+        }
+        div.flex-group {
+          display: inline-flex;
+          justify-content: center;
+          gap: 2rem;
+          flex-direction: row;
+          flex-wrap: wrap;
+
+          div.block-group {
+            border-radius: 4px;
+            background-color: white;
+            border: 1px solid #dadce0;
+            flex: 1 1 340px;
+            min-width: 170px;
+            div.row-block {
+              div.block-image {
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                div.icon {
+                  a {
+                    div.icon-container {
+                      img {
+                        width: 96px;
+                      }
+                      .flutter {
+                        height: 96px;
+                      }
+                    }
+                  }
+                }
+              }
+              div.block-description {
+                height: 240px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                div.landing-row-body {
+                  display: flex;
+                  flex-direction: column;
+
+                  justify-content: space-between;
+                  max-width: 300px;
+                  height: 200px;
+                  flex: 1 0 0%;
+                  h3 {
+                    font-size: 1.5rem;
+                    color: #1a73e8;
+                  }
+                  div.block-description-content {
+                    font-size: 1rem;
+                    color: black;
+                  }
+                  div.button {
+                    a {
+                      text-decoration: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
