@@ -24,7 +24,6 @@ body header {
   z-index: 10;
   top: 0;
   height: 48px;
-  gap: 10px;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
