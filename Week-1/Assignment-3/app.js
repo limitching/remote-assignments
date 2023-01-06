@@ -19,7 +19,7 @@ function countAandB(input) {
     }
     i++;
   }
-  return n_a + " 'a' letter and " + n_b + " 'b' letter";
+  return n_a + n_b + " (" + n_a + " 'a' letter and " + n_b + " 'b' letter)";
 }
 
 function toNumber(input) {
