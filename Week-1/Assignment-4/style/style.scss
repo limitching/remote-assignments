@@ -67,6 +67,7 @@ body {
               font-weight: bold;
               flex-wrap: nowrap;
               align-self: center;
+              justify-self: center;
               color: $themeColor;
               text-decoration: none;
               transition: all 0.1s ease;
@@ -81,6 +82,49 @@ body {
               fill: $themeColor;
               width: 24px;
               height: 24px;
+            }
+          }
+          li.more {
+            display: none;
+          }
+          @media only screen and (max-width: 1400px) {
+            li.width-1400px {
+              display: none;
+            }
+            li.more {
+              display: flex;
+            }
+          }
+          @media only screen and (max-width: 1250px) {
+            li.width-1250px {
+              display: none;
+            }
+            li.more {
+              display: flex;
+            }
+          }
+          @media only screen and (max-width: 1075px) {
+            li.width-1075px {
+              display: none;
+            }
+            li.more {
+              display: flex;
+            }
+          }
+          @media only screen and (max-width: 975px) {
+            li.width-975px {
+              display: none;
+            }
+            li.more {
+              display: flex;
+            }
+          }
+          @media only screen and (max-width: 815px) {
+            li.width-815px {
+              display: none;
+            }
+            li.more {
+              display: flex;
             }
           }
         }
@@ -108,7 +152,7 @@ body {
         }
         input {
           height: 36px;
-          width: 200px;
+          max-width: 200px;
           border: none;
           border-radius: 4px;
           background-color: transparent;
@@ -880,9 +924,7 @@ footer.nav {
     }
   }
 }
-
 footer.terms-privacy {
-  display: flex;
   justify-content: center;
   padding: 1.5rem 0;
   div.row-container {
