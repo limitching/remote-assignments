@@ -21,11 +21,13 @@ hr {
   border-top: 0.5px solid $searchbox-hover;
 }
 body {
+  width: 100%;
   header {
     position: sticky;
     z-index: 10;
     top: 0;
     height: 48px;
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -56,7 +58,7 @@ body {
         flex-wrap: nowrap;
         ul {
           display: flex;
-          gap: 24px;
+          gap: 1.5rem;
 
           li {
             list-style-type: none;
@@ -421,7 +423,7 @@ body {
         justify-content: center;
         gap: 40px;
         flex-wrap: wrap;
-        width: 1800px;
+        max-width: 1800px;
         padding: 24px;
 
         div.events {
@@ -431,7 +433,8 @@ body {
           border-radius: 10px;
           flex-wrap: nowrap;
           flex-direction: column;
-          width: 700px;
+          flex: 0 1 700px;
+          min-width: 350px;
           div.item-media {
             overflow: hidden;
             figure {
@@ -446,7 +449,8 @@ body {
             display: flex;
             justify-content: center;
             div.landing-row-item-body {
-              width: 670px;
+              flex: 0 1 670px;
+              min-width: 400px;
               h3 {
                 margin-top: 20px;
                 margin-left: 10px;
@@ -489,16 +493,19 @@ body {
           border: 1px solid #dadce0;
           padding-bottom: 20px;
           display: flex;
+          flex: 0 1 700px;
+          min-width: 350px;
           border-radius: 10px;
           flex-wrap: nowrap;
           flex-direction: column;
-          width: 700px;
+
           div.item-media {
             overflow: hidden;
             figure {
               a {
+                display: flex;
                 img {
-                  width: 700px;
+                  max-width: 700px;
                 }
               }
             }
@@ -695,9 +702,10 @@ body {
       justify-content: center;
       align-items: center;
       padding-bottom: 2.5rem;
+      width: 100vw;
       div.experts-group {
-        flex: 1 0 1440px;
-        max-width: 1800px;
+        flex: 0 1 1800px;
+
         justify-content: center;
         align-items: center;
         display: inline-flex;

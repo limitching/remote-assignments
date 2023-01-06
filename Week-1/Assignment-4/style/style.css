@@ -18,12 +18,16 @@ hr {
   border-top: 0.5px solid #e8eaed;
 }
 
+body {
+  width: 100%;
+}
 body header {
   position: -webkit-sticky;
   position: sticky;
   z-index: 10;
   top: 0;
   height: 48px;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -56,7 +60,7 @@ body header div.big-bar nav {
 }
 body header div.big-bar nav ul {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
 }
 body header div.big-bar nav ul li {
   list-style-type: none;
@@ -399,7 +403,7 @@ body section.events-community div.landing-row-inner div.landing-row-group {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
-  width: 1800px;
+  max-width: 1800px;
   padding: 24px;
 }
 body section.events-community div.landing-row-inner div.landing-row-group div.events {
@@ -409,7 +413,8 @@ body section.events-community div.landing-row-inner div.landing-row-group div.ev
   border-radius: 10px;
   flex-wrap: nowrap;
   flex-direction: column;
-  width: 700px;
+  flex: 0 1 700px;
+  min-width: 350px;
 }
 body section.events-community div.landing-row-inner div.landing-row-group div.events div.item-media {
   overflow: hidden;
@@ -422,7 +427,8 @@ body section.events-community div.landing-row-inner div.landing-row-group div.ev
   justify-content: center;
 }
 body section.events-community div.landing-row-inner div.landing-row-group div.events div.item-description div.landing-row-item-body {
-  width: 670px;
+  flex: 0 1 670px;
+  min-width: 400px;
 }
 body section.events-community div.landing-row-inner div.landing-row-group div.events div.item-description div.landing-row-item-body h3 {
   margin-top: 20px;
@@ -462,16 +468,20 @@ body section.events-community div.landing-row-inner div.landing-row-group div.co
   border: 1px solid #dadce0;
   padding-bottom: 20px;
   display: flex;
+  flex: 0 1 700px;
+  min-width: 350px;
   border-radius: 10px;
   flex-wrap: nowrap;
   flex-direction: column;
-  width: 700px;
 }
 body section.events-community div.landing-row-inner div.landing-row-group div.community div.item-media {
   overflow: hidden;
 }
+body section.events-community div.landing-row-inner div.landing-row-group div.community div.item-media figure a {
+  display: flex;
+}
 body section.events-community div.landing-row-inner div.landing-row-group div.community div.item-media figure a img {
-  width: 700px;
+  max-width: 700px;
 }
 body section.events-community div.landing-row-inner div.landing-row-group div.community div.item-description {
   display: flex;
@@ -650,10 +660,10 @@ body section.expert div.landing-row-expert {
   justify-content: center;
   align-items: center;
   padding-bottom: 2.5rem;
+  width: 100vw;
 }
 body section.expert div.landing-row-expert div.experts-group {
-  flex: 1 0 1440px;
-  max-width: 1800px;
+  flex: 0 1 1800px;
   justify-content: center;
   align-items: center;
   display: inline-flex;
