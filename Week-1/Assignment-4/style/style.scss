@@ -322,6 +322,8 @@ body {
         justify-content: center;
         align-items: center;
         header {
+          display: flex;
+          justify-content: center;
           margin: 4rem;
           div.header-text {
             h2 {
@@ -621,6 +623,8 @@ body {
         justify-content: center;
         align-items: center;
         header {
+          display: flex;
+          justify-content: center;
           background-color: transparent;
           margin: 2.5rem 0;
           h3 {
@@ -828,7 +832,9 @@ body {
 footer.linkboxes {
   display: flex;
   justify-content: center;
+  align-items: center;
   nav.linkboxes {
+    width: 97.5%;
     margin-bottom: 2rem;
     flex: 0 1 1855px;
     //height: 300px;
@@ -941,12 +947,14 @@ footer.nav {
   }
 }
 footer.terms-privacy {
+  display: flex;
   justify-content: center;
   padding: 1.5rem 0;
   div.row-container {
     flex: 1 0;
     max-width: 97.5%;
     display: flex;
+    justify-content: center;
     gap: 1rem;
     nav.footer-link {
       display: flex;

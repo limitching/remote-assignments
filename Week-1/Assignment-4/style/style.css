@@ -319,6 +319,8 @@ body section.developer-products div.landing-row-inner div.landing-column-inner {
   align-items: center;
 }
 body section.developer-products div.landing-row-inner div.landing-column-inner header {
+  display: flex;
+  justify-content: center;
   margin: 4rem;
 }
 body section.developer-products div.landing-row-inner div.landing-column-inner header div.header-text h2 {
@@ -591,6 +593,8 @@ body section.news div.landing-row-inner div.landing-row-group {
   align-items: center;
 }
 body section.news div.landing-row-inner div.landing-row-group header {
+  display: flex;
+  justify-content: center;
   background-color: transparent;
   margin: 2.5rem 0;
 }
@@ -781,8 +785,10 @@ body section.expert div.landing-row-expert div.experts-group div.layout div.prof
 footer.linkboxes {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 footer.linkboxes nav.linkboxes {
+  width: 97.5%;
   margin-bottom: 2rem;
   flex: 0 1 1855px;
   display: flex;
@@ -902,6 +908,7 @@ footer.nav nav.nav-block-footer div.footer-block nav.footer-site ul.footer-site 
 }
 
 footer.terms-privacy {
+  display: flex;
   justify-content: center;
   padding: 1.5rem 0;
 }
@@ -909,6 +916,7 @@ footer.terms-privacy div.row-container {
   flex: 1 0;
   max-width: 97.5%;
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
 footer.terms-privacy div.row-container nav.footer-link {
