@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -32,6 +33,7 @@ body header {
   flex-wrap: nowrap;
   align-items: center;
   background-color: white;
+  gap: 0.5rem;
 }
 body header div.logo {
   display: flex;
@@ -66,12 +68,68 @@ body header div.big-bar nav ul li {
   list-style-type: none;
   display: flex;
 }
+body header div.big-bar nav ul li button.dropbtn {
+  border: none;
+  background-color: white;
+}
+body header div.big-bar nav ul li button.dropbtn a {
+  font-weight: bold;
+  flex-wrap: nowrap;
+  align-self: center;
+  justify-self: center;
+  color: #5f6368;
+  display: flex;
+  text-decoration: none;
+  transition: all 0.1s ease;
+  padding: 0 1rem 0 1rem;
+  flex-grow: 0;
+}
+body header div.big-bar nav ul li button.dropbtn a:hover {
+  color: #202124;
+}
+body header div.big-bar nav ul li button.dropbtn a:hover p {
+  color: #202124;
+  border-bottom: 4px solid #202124;
+  padding: 0.8rem 0;
+}
+body header div.big-bar nav ul li button.dropbtn a p {
+  transition: all 0.1s ease;
+  color: #5f6368;
+}
+body header div.big-bar nav ul li button.dropbtn a svg.icon-arrow {
+  align-self: center;
+  fill: #5f6368;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+body header div.big-bar nav ul li div.dropdown {
+  position: relative;
+  display: inline-block;
+}
+body header div.big-bar nav ul li div.dropdown:hover {
+  display: block;
+}
+body header div.big-bar nav ul li div.dropdown div.dropdown-content {
+    display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+body header div.big-bar nav ul li div.dropdown div.dropdown-content:hover {
+  background-color: #ddd;
+}
+body header div.big-bar nav ul li div.dropdown div.dropdown-content div.dropdown:hover {
+  display: block;
+}
 body header div.big-bar nav ul li a {
   font-weight: bold;
   flex-wrap: nowrap;
   align-self: center;
   justify-self: center;
   color: #5f6368;
+  display: flex;
   text-decoration: none;
   transition: all 0.1s ease;
   padding: 0 1rem 0 1rem;
@@ -80,11 +138,20 @@ body header div.big-bar nav ul li a {
 body header div.big-bar nav ul li a:hover {
   color: #202124;
 }
-body header div.big-bar nav ul li svg.icon-arrow {
+body header div.big-bar nav ul li a:hover p {
+  color: #202124;
+  border-bottom: 4px solid #202124;
+  padding: 0.8rem 0;
+}
+body header div.big-bar nav ul li a p {
+  transition: all 0.1s ease;
+  color: #5f6368;
+}
+body header div.big-bar nav ul li a svg.icon-arrow {
   align-self: center;
   fill: #5f6368;
-  width: 24px;
-  height: 24px;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 body header div.big-bar nav ul li.more {
   display: none;
@@ -134,6 +201,9 @@ body header div.big-bar div.search-bar {
   display: flex;
   flex-wrap: nowrap;
   max-width: 200px;
+  height: 36px;
+  align-self: center;
+  justify-self: center;
   border-radius: 4px;
   transition: background 0.2s, color 0.2s;
 }
@@ -200,7 +270,7 @@ body header div.circles {
   align-items: center;
   flex: 0 0 auto;
   flex-wrap: nowrap;
-  gap: 8px;
+  gap: 0.5rem;
   margin-right: 15px;
 }
 body header div.circles div.circle {
@@ -243,35 +313,36 @@ body header div.circles div.profile-circle div.circle-container img {
   width: 100%;
   z-index: 0;
 }
-body section.tec-impact {
+body section.build-google {
   display: flex;
   flex-wrap: no-wrap;
   align-items: center;
   justify-content: center;
-  background-color: #1e8e3e;
+  background-color: #1a73eb;
 }
-body section.tec-impact div.contents-container {
+body section.build-google div.contents-container {
   display: flex;
   flex-wrap: nowrap;
   max-width: 1488px;
+  gap: 3rem;
 }
-body section.tec-impact div.contents-container div.contents {
+body section.build-google div.contents-container div.contents {
   flex: 1.5 0 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 16px;
 }
-body section.tec-impact div.contents-container div.contents h1 {
+body section.build-google div.contents-container div.contents h1 {
   color: white;
   font-size: 32px;
 }
-body section.tec-impact div.contents-container div.contents p {
+body section.build-google div.contents-container div.contents p {
   color: white;
   line-height: 1.75rem;
 }
-body section.tec-impact div.contents-container div.contents div.button {
-  background-color: #1e8e3e;
+body section.build-google div.contents-container div.contents div.button {
+  background-color: #1a73eb;
   border-radius: 4px;
   border: 1px solid white;
   display: flex;
@@ -280,20 +351,21 @@ body section.tec-impact div.contents-container div.contents div.button {
   max-width: 125px;
   height: 36px;
 }
-body section.tec-impact div.contents-container div.contents div.button:hover {
-  background-color: #1a7935;
+body section.build-google div.contents-container div.contents div.button:hover {
+  background-color: #1662c5;
 }
-body section.tec-impact div.contents-container div.contents div.button p {
+body section.build-google div.contents-container div.contents div.button a {
+  text-decoration: none;
   color: white;
 }
-body section.tec-impact div.contents-container div.img-container {
+body section.build-google div.contents-container div.img-container {
   flex: 1 0 20%;
   border-radius: 0.6rem;
   max-width: 500px;
   overflow: hidden;
   margin: 3rem 0;
 }
-body section.tec-impact div.contents-container div.img-container img {
+body section.build-google div.contents-container div.img-container img {
   width: 500px;
 }
 body section.developer-products {
