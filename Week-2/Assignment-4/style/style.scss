@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  display: block;
+  flex-direction: column;
+  justify-content: space-between;
+  header {
+    display: flex;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    section.logo {
+      flex: 4 1 400px;
+      display: flex;
+
+      p {
+        font-size: 1.5rem;
+        align-self: center;
+        text-align: center;
+      }
+      img {
+        height: 10vh;
+      }
+    }
+    nav {
+      flex: 2 1 200px;
+      ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+
+        li {
+          a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.25rem;
+            transition: all 0.2s ease;
+            &:hover {
+              color: blue;
+              border-bottom: 3px solid blue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    section.welcome {
+      height: 20vh;
+      width: 100%;
+      padding: 8rem 0;
+      background-color: #cfdcec;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      div.content-container {
+        h1 {
+          font-weight: bold;
+          text-align: center;
+          height: 100%;
+          align-self: center;
+        }
+      }
+    }
+    section.boxes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      justify-content: space-around;
+      flex: 1 0 600px;
+      //set max-width to 1200px, so that Total width of content boxes should be fixed in 1200px when screen width > 1200px
+      max-width: 1200px;
+
+      div.content-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+          text-align: center;
+          padding: 2rem;
+        }
+      }
+
+      div.boxes {
+        flex: 2;
+        display: inline-flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        align-items: center;
+
+        .box {
+          //debug
+          //border: 10px solid white;
+          padding: 4rem;
+          text-align: center;
+          flex: 1 0 500px;
+          max-width: 600px;
+          background-color: #8b98a8;
+          font-size: 1.25rem;
+          transition: all 0.2s ease;
+          &:hover {
+            background-color: rgb(123, 187, 28);
+          }
+        }
+      }
+      div.action-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div.action {
+          display: flex;
+          background-color: #e0edfd;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          height: 50px;
+          a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.25rem;
+            transition: all 0.2s ease;
+            &:hover {
+              color: blue;
+              border-bottom: 3px solid blue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    section.copyright {
+      p {
+        font-size: small;
+      }
+    }
+    section.link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-size: medium;
+        margin: 1rem;
+      }
+      a {
+        img {
+          width: 3vw;
+        }
+      }
+    }
+  }
+}
