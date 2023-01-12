@@ -116,6 +116,9 @@ body main section.boxes div.boxes .box {
 body main section.boxes div.boxes .box:hover {
   background-color: rgb(123, 187, 28);
 }
+body main section.boxes div[isHide=true] {
+  display: none;
+}
 body main section.boxes div.action-container {
   flex: 1;
   display: flex;
