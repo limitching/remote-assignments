@@ -32,6 +32,7 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     background-color: white;
+    gap: 0.5rem;
     //border: 2px solid black;
     div.logo {
       display: flex;
@@ -63,25 +64,101 @@ body {
           li {
             list-style-type: none;
             display: flex;
+            button.dropbtn {
+              border: none;
+              background-color: white;
+              a {
+                font-weight: bold;
+                flex-wrap: nowrap;
+                align-self: center;
+                justify-self: center;
+                color: $themeColor;
+                display: flex;
+                text-decoration: none;
+                transition: all 0.1s ease;
+                padding: 0 1rem 0 1rem;
+                flex-grow: 0;
+                &:hover {
+                  color: #202124;
+                  p {
+                    color: #202124;
+                    border-bottom: 4px solid #202124;
+                    padding: 0.8rem 0;
+                  }
+                }
+                p {
+                  transition: all 0.1s ease;
+                  color: $themeColor;
+                }
+                svg.icon-arrow {
+                  align-self: center;
+                  fill: $themeColor;
+                  width: 1.2rem;
+                  height: 1.2rem;
+                }
+              }
+            }
+            div.dropdown {
+              position: relative;
+              display: inline-block;
+              &:hover {
+                display: block;
+              }
+              div.dropdown-content {
+                  display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                &:hover {
+                  background-color: #ddd;
+                }
+                div.dropdown {
+                  &:hover {
+                    display: block;
+                  }
+                  ul.dropdown-group {
+                    li.link-group {
+                      ul {
+                        li.link {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
             a {
               font-weight: bold;
               flex-wrap: nowrap;
               align-self: center;
               justify-self: center;
               color: $themeColor;
+              display: flex;
               text-decoration: none;
               transition: all 0.1s ease;
               padding: 0 1rem 0 1rem;
               flex-grow: 0;
               &:hover {
                 color: #202124;
+                p {
+                  color: #202124;
+                  border-bottom: 4px solid #202124;
+                  padding: 0.8rem 0;
+                }
               }
-            }
-            svg.icon-arrow {
-              align-self: center;
-              fill: $themeColor;
-              width: 24px;
-              height: 24px;
+              p {
+                transition: all 0.1s ease;
+                color: $themeColor;
+              }
+              svg.icon-arrow {
+                align-self: center;
+                fill: $themeColor;
+                width: 1.2rem;
+                height: 1.2rem;
+              }
             }
           }
           li.more {
@@ -134,6 +211,9 @@ body {
         display: flex;
         flex-wrap: nowrap;
         max-width: 200px;
+        height: 36px;
+        align-self: center;
+        justify-self: center;
         border-radius: 4px;
         transition: background 0.2s, color 0.2s;
         &:hover {
@@ -203,7 +283,7 @@ body {
       align-items: center;
       flex: 0 0 auto;
       flex-wrap: nowrap;
-      gap: 8px;
+      gap: 0.5rem;
       margin-right: 15px;
       div.circle {
         display: flex;
@@ -248,16 +328,17 @@ body {
     }
   }
 
-  section.tec-impact {
+  section.build-google {
     display: flex;
     flex-wrap: no-wrap;
     align-items: center;
     justify-content: center;
-    background-color: #1e8e3e;
+    background-color: #1a73eb;
     div.contents-container {
       display: flex;
       flex-wrap: nowrap;
       max-width: 1488px;
+      gap: 3rem;
       div.contents {
         flex: 1.5 0 50%;
         display: flex;
@@ -273,7 +354,7 @@ body {
           line-height: 1.75rem;
         }
         div.button {
-          background-color: #1e8e3e;
+          background-color: #1a73eb;
           border-radius: 4px;
           border: 1px solid white;
           display: flex;
@@ -282,9 +363,10 @@ body {
           max-width: 125px;
           height: 36px;
           &:hover {
-            background-color: #1a7935;
+            background-color: #1662c5;
           }
-          p {
+          a {
+            text-decoration: none;
             color: white;
           }
         }
