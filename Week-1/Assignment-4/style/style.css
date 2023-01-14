@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -90,9 +89,10 @@ body header div.big-bar nav ul li button.dropbtn a:hover {
 body header div.big-bar nav ul li button.dropbtn a:hover p {
   color: #202124;
   border-bottom: 4px solid #202124;
-  padding: 0.8rem 0;
 }
 body header div.big-bar nav ul li button.dropbtn a p {
+  align-self: center;
+  justify-content: center;
   transition: all 0.1s ease;
   color: #5f6368;
 }
@@ -110,7 +110,7 @@ body header div.big-bar nav ul li div.dropdown:hover {
   display: block;
 }
 body header div.big-bar nav ul li div.dropdown div.dropdown-content {
-    display: none;
+  display: none;
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
@@ -122,6 +122,9 @@ body header div.big-bar nav ul li div.dropdown div.dropdown-content:hover {
 }
 body header div.big-bar nav ul li div.dropdown div.dropdown-content div.dropdown:hover {
   display: block;
+}
+body header div.big-bar nav ul li div.dropdown div.dropdown-content div.dropdown ul.dropdown-group li.link-group ul li.link a.link {
+  text-decoration: none;
 }
 body header div.big-bar nav ul li a {
   font-weight: bold;
@@ -141,11 +144,14 @@ body header div.big-bar nav ul li a:hover {
 body header div.big-bar nav ul li a:hover p {
   color: #202124;
   border-bottom: 4px solid #202124;
-  padding: 0.8rem 0;
 }
 body header div.big-bar nav ul li a p {
+  align-self: center;
+  justify-self: center;
+  font-size: 1rem;
   transition: all 0.1s ease;
   color: #5f6368;
+  padding: 0.45rem 0;
 }
 body header div.big-bar nav ul li a svg.icon-arrow {
   align-self: center;

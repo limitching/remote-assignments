@@ -83,10 +83,11 @@ body {
                   p {
                     color: #202124;
                     border-bottom: 4px solid #202124;
-                    padding: 0.8rem 0;
                   }
                 }
                 p {
+                  align-self: center;
+                  justify-content: center;
                   transition: all 0.1s ease;
                   color: $themeColor;
                 }
@@ -105,7 +106,7 @@ body {
                 display: block;
               }
               div.dropdown-content {
-                  display: none;
+                display: none;
                 position: absolute;
                 background-color: #f1f1f1;
                 min-width: 160px;
@@ -122,6 +123,11 @@ body {
                     li.link-group {
                       ul {
                         li.link {
+                          a.link {
+                            text-decoration: none;
+                            p {
+                            }
+                          }
                         }
                       }
                     }
@@ -146,12 +152,15 @@ body {
                 p {
                   color: #202124;
                   border-bottom: 4px solid #202124;
-                  padding: 0.8rem 0;
                 }
               }
               p {
+                align-self: center;
+                justify-self: center;
+                font-size: 1rem;
                 transition: all 0.1s ease;
                 color: $themeColor;
+                padding: 0.45rem 0;
               }
               svg.icon-arrow {
                 align-self: center;
