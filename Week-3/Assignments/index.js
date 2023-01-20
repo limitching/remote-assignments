@@ -9,7 +9,7 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var dataRouter = require("./routes/data");
 var myNameRouter = require("./routes/myName");
-var trackNameRouter = require("./routes/trackName");
+//var trackNameRouter = require("./routes/trackName");
 
 var app = express();
 
@@ -27,9 +27,15 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/data", dataRouter);
 app.use("/myName", myNameRouter);
-app.use("/trackName", trackNameRouter);
+//app.use("/trackName", trackNameRouter);
 //solve Cross-Origin Resource Sharing Issue
 //app.use(cors());
+app.get("/trackName", (req, res) => {
+  res.cookie("username", req.query.name);
+  const name = req.cookies.username;
+  //res.send(`Thank you, your name now store in cookie!`);
+  res.redirect("/myName");
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
