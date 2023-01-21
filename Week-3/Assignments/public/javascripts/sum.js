@@ -18,7 +18,7 @@ function sendAJAX(num) {
     }
   };
   //For solving Cross-Origin Resource Sharing Issue, I use cors middleware to solve it.
-  xhr.open("GET", `/data?number=${num}`, true);
+  xhr.open("GET", `http://localhost:3000/data?number=${num}`, true);
   xhr.send();
   return xhr;
 }
