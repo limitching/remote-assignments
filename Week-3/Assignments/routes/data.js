@@ -13,10 +13,11 @@ router.get("/", function (req, res, next) {
     } else {
       //1+2+...+N=(1+N)*N/2
       const result = ((1 + num) * num) / 2;
-      res.status(200).json({ result });
+      res.status(200).json({ result }); //res.json method use this line
+      //res.status(200).send(`${result}`);//res.send method use this line
     }
   }
-  console.log(res.json);
+  //console.log(res.json);//Test
 });
 
 //error handler
