@@ -17,13 +17,12 @@ function sendAJAX(num) {
       console.log(response.result);
       document.getElementById("result").value = response.result;
       /*
-      //if API use res.send method can use this section
+      //if API use res.send method, switch by remove the comments for this section and comments the upper section in if condition
       console.log(xhr.responseText);
       document.getElementById("result").value = xhr.responseText;
       */
     }
   };
-  //For solving Cross-Origin Resource Sharing Issue, I use cors middleware to solve it.
   xhr.open("GET", `http://localhost:3000/data?number=${num}`, true);
   xhr.send();
   return xhr;

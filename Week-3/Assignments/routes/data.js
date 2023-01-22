@@ -14,7 +14,7 @@ router.get("/", function (req, res, next) {
       //1+2+...+N=(1+N)*N/2
       const result = ((1 + num) * num) / 2;
       res.status(200).json({ result }); //res.json method use this line
-      //res.status(200).send(`${result}`);//res.send method use this line
+      //res.status(200).send(`${result}`);//res.send method use this line, which can be switch by remove or add comments
     }
   }
   //console.log(res.json);//Test
