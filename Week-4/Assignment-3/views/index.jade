@@ -1,5 +1,25 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  Section.signup
+    h1 Sign-up Form
+    form(action="/signup")
+      label(for="email") Email:
+      input#sign-in-email(type="email",name="email")
+      br
+      label(for='password') Password:
+        input#sign-in-password(type='password', name='password')
+        br
+        input(type='submit', value='Sign-up')
+  hr
+  Section.signup
+    h1 Sign-in Form
+    form(action="/signin")
+      label(for="email") Email:
+      input#sign-up-email(type="email",name="email")
+      br
+      label(for='password') Password:
+        input#sign-up-password(type='password', name='password')
+        br
+        input(type='submit', value='Sign-in')
+  script(src='/database.js')
