@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  header
+    section.logo
+      img(src='/images/logo.png')
+      p
+        i(lang='la') Hung Wei-Ching&apos;s #{title}
+    nav
+      ul
+        li
+          a(href='https://github.com/limitching/remote-assignments/tree/main/Week-1') Week-1
+        li
+          a(href='https://github.com/limitching/remote-assignments/tree/main/Week-2') Week-2
+        li
+          a(href='https://github.com/limitching/remote-assignments/tree/main/Week-3') Week-3
+        li
+          a(href='https://github.com/limitching/remote-assignments/tree/main/Week-4') Week-4
+  main
+    section.welcome
+      .content-container
+        h1
+          i(lang='la')
+            | Happy Lunar new year !
+            br
+            | Welcome to Google Store
+    section.boxes
+      .content-container
+        h2 Ring in the new year with a treat for yourself!
+      .boxes.boxes1
+
+      .action-container
+        button.action(onclick='toSeeProducts(event)') See our Products
+
+  footer
+    section.copyright
+      p &copy; Hung Wei-Ching, 2023
+    section.link
+      p Follow me on Github
+      a(href='https://github.com/limitching' target='blank')
+        img(src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' alt='Github Icon')
+  script(src='/javascripts/Assignment-2.js')
