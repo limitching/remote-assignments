@@ -49,6 +49,7 @@ module.exports = {
   createUser,
 };
 
+//debug
 // getUsers().then((result) => {
 //   console.log(result);
 // });

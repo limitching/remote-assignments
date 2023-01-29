@@ -39,7 +39,7 @@ router.post("/signup", async (req, res, next) => {
       break;
     }
   }
-  //const user = await database.createUser(email, password);
+  const user = await database.createUser(email, password);
   await res.cookie("email", email);
   res.render("signup", {
     title: "Sign-up Successfully",
