@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    section.main
+        div.set-row-in-center
+            .member-row-in-center 
+                .member
+                    h1.member Hello, member!
+                    p.email Your Email: #{email}
+                    form(action="/logout",method="post")
+                        input(type='submit', value='Log-out',class="submit")
+    

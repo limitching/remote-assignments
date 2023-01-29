@@ -1,0 +1,98 @@
+body {
+  padding: 5%;
+  margin: 0% 5%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #873d78;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1.error {
+    height: 2rem;
+    color: #a2d5f4;
+    padding: 1rem;
+  }
+  section.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    div.set-row-in-center {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 80vw;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border-radius: 1rem;
+        justify-content: center;
+        min-width: 400px;
+        height: 400px;
+        min-width: 400px;
+        h1 {
+          font-size: 2rem;
+          padding: 1.5rem;
+          margin: 0.5rem 0;
+          height: 2rem;
+          align-content: center;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          label {
+            font-size: 1.5rem;
+          }
+          width: 80%;
+          input.input {
+            width: 100%;
+            height: 2rem;
+          }
+          input.submit {
+            width: 40%;
+            height: 3rem;
+            font-size: 1.5rem;
+            border-radius: 10px;
+          }
+        }
+      }
+      section.sign-in {
+        background-color: #2284b2;
+      }
+      section.sign-up {
+        background-color: #e09b48;
+      }
+      div.member-row-in-center {
+        background-color: #a2d5f4;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3rem;
+        border-radius: 20px;
+        div.member {
+          width: 90%;
+          h1 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+          input {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+a {
+  color: #00b7ff;
+}
